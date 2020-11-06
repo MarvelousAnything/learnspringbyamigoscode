@@ -1,0 +1,16 @@
+app:
+  datasource:
+    jdbc-url: jdbc:postgresql://localhost:5432/demodb
+    username: postgres
+    password: password
+    pool-size: 30
+management:
+  security:
+    enabled: true
+    roles: ADMIN
+security:
+  basic:
+    enabled: true
+  user:
+    name: admin
+    password: admin
